@@ -42,8 +42,11 @@ Done use my account
 #How to Run the test
 
 Make sure this app and feature already installed :
+
 -VScode
+
 -Node.js (with webdriver io : `npm init wdio@latest .`)
+
 -Cucumber plugins on Visual Code
 
 Step to test the project
