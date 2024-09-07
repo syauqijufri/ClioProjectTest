@@ -1,0 +1,61 @@
+
+        
+
+  @id:1
+ Scenario: As a user, I can create new company
+    Given I am on the login page
+    When I login with 'syauqi247@gmail.com' and 'admin1234'
+    Then I makesure going to dashboard page
+    When as user, i can click contact on sidebar
+    When as user, i can click button new company
+    When as user, i can fill 'syauqitestbaru' on name field
+    When as user, i can fill 'syauqi247@gmail.com' on email field
+    When as user, i can fill '08887827372' on phone field
+    When as user, i can fill 'https://google.com' on website field
+    When as user, i can fill 'jalan jamblang' on street field
+    When as user, i can fill 'jakarta' on city field
+    When as user, i can fill '12345' on zip or postal code field
+    When as user, i can fill 'DKI Jakarta' on state field
+    When as user, i can fill 'indonesia' on country
+    When as user, i can click button save contact
+    Then as user, i can see contact information what data i create before
+
+@id:2
+ Scenario: As a user, i can create a new matter
+    Given I am on the login page
+    When I login with 'syauqi247@gmail.com' and 'admin1234'
+    Then I makesure going to dashboard page
+    When as user, i can click matters on sidebar
+    When as user, i can click button new matters
+    When as user, i can click dropdown arrow client
+    When as user, i can choose syauqitestbaru client
+    When as user, i can fill 'ini testing' on matter description
+    When as user, i can choose everyone on radio button film users with access
+    When as user, i can click button save
+    Then as user, i can see matter what i create before
+
+
+  Scenario: As a user, i can create a new Task
+    Given I am on the login page
+    When I login with 'syauqi247@gmail.com' and 'admin1234'
+    Then I makesure going to dashboard page
+    When as user, i can click Tasks on sidebar
+    When as user, i can click button new task
+    When as user, i can fill 'ini testing' on name
+    When as user, i can click button save on task popup
+    Then as user, i can see task what i create before
+
+
+  Scenario: As a user, i can create a new Time entry
+    Given I am on the login page
+    When I login with 'syauqi247@gmail.com' and 'admin1234'
+    Then I makesure going to dashboard page
+    When as user, i can click button timekeeper to start
+    When as user, i can click button timekeeper to end
+    When as user, i can fill '00003-syauqitest' on matter
+    When as user, i can click button save entry
+    Then as user, i can see notification successfully save
+
+
+
+
